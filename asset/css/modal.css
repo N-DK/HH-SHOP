@@ -1,0 +1,254 @@
+.modalLogIn,
+.modalRegister {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+.modalLogIn-container,
+.modalRegister-container {
+    max-width: 500px;
+    width: calc(100% - 48px);
+    background-color: var(--white-color);
+    border-radius: 2px;
+    animation: fadeModal ease-in 0.15s;
+    
+}
+
+.modalRegister-container__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px;
+}
+
+.modalRegister-container__header-item {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+}
+
+.modalRegister-container__header-item-right {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.modalRegister-container__body {
+    margin: 48px 24px 0 24px;
+    position: relative;
+    padding-bottom: 120px ;
+}
+
+.modalRegister-container__body-item {
+    padding: 8px 0;
+    display: flex;
+}
+
+.form-control {
+    flex: 1;
+    padding:10px 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.capcha {
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+.send-btn-modal {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 8px;
+}
+
+.modalRegister-container__body-desc {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.modalRegister-container__body-desc-item {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.modalRegister-container__body-desc__item-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.modalRegister-container__body-btn {
+    position: absolute;
+    border: 0;
+    right: 0;
+    bottom: 20px;
+    cursor: pointer;
+}
+.btn-register-modal,
+.btn-exit-modal {
+    font-size: 16px;
+    padding: 8px 42px;
+    border: none;
+    margin-right: 4px;
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+
+.btn-exit-modal {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+.btn-exit-modal:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.btn-register-modal {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.modalRegister-container__footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    
+}
+
+.modalRegister-container__footer-sms,
+.modalRegister-container__footer-google,
+.modalRegister-container__footer-face {
+    display: flex;
+    flex: 1;
+    height: 50%;
+    padding: 8px;
+    border: none;
+    align-items: center;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.modalRegister-container__footer-face {
+    background-color: #3b5998;
+    margin-left: 28px;
+    margin-right: 4px;
+}
+
+.modalRegister-container__footer-google {
+    background-color: #d34836;
+    margin-right: 28px;
+    border-radius: 3px;
+    margin-left: 4px;
+}
+
+.modalRegister-container__footer-sms{
+    background-color: #03b51f;
+}
+
+.modalRegister-container__footer-sms,
+.modalRegister-container__footer-face-text,
+.modalRegister-container__footer-google-text {
+    font-size: 14px;
+    margin: 0;
+    color: var(--white-color);
+   
+}
+
+.modalRegister-container__footer-sms-icon,
+.modalRegister-container__footer-google-icon,
+.modalRegister-container__footer-face-icon {
+    font-size: 24px;
+    margin-right: 32px;
+    color: var(--white-color);
+}
+
+.openLogIn,
+.openRegister {
+    display: flex;
+}
+
+
+
+
+.modalLogIn-container__body-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.subRight-modalLogIn-container__body-item,
+.subLeft-modalLogIn-container__body-item {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.subRight-modalLogIn-container__body-item {
+    margin-left: 40px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.subLeft-modalLogIn-container__body-item {
+    position: relative;
+    color: var(--primary-color);
+}
+
+.subLeft-modalLogIn-container__body-item::after {
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    height: 20px;
+    position: absolute;
+    top: -3px;
+    right: -22px;
+    cursor: text;
+}
+
+.modalLogIn-container__footer-sms {
+    margin-left: 28px;
+    margin-right: 4px;
+}
+
+.modalLogIn-container__footer-face {
+    margin-left: 4px;
+}
+
+.modalLogIn-container__body {
+    padding-bottom: 148px;
+}
+
+#input-password {
+    position: relative;
+}
+
+.password-icon {
+    font-size: 20px;
+    padding: 9px;
+    padding-right: 12px;
+    border-left: none;
+    cursor: pointer;
+    position: absolute;
+    color:#757575;
+}
+
+.before-click {
+    display: block;
+}
+
+.openPassword {
+    display: none;
+}
