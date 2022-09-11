@@ -500,7 +500,7 @@
 }
 
 .header__cart-info-img {
-    background: #fff url('/asset/img/no-cart.png') no-repeat center / 60%;
+    background: #fff url('https://foodhub.vn/assets/images/no-cart.png') no-repeat center / 60%;
     height: 285px;
     cursor:auto;
 }
